@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+        
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(52, 171, 95);
+    font-family: 'calibri';
+    text-align: justify;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap: 1px;
+}
+
+.grid_description {
+    background-color: rgba(134, 187, 0, 0.801);
+    color: white;
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+
+.grid_header {
+    background-color: rgb(214, 19, 19);
+    color: white;
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+.grid_leftaside {
+    background-color: lightgray;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+.grid_rightaside {
+    background-color: lightgray;
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+.grid_main {
+    background-color: rgb(26, 139, 232);
+    grid-column: 2;
+    grid-row: 2;
+    margin: 5px;
+    padding: 25px;
+}
+
+
+.grid_footer {
+    background-color: rgb(3, 165, 0);
+    color: white;
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+.grid_data {
+    background-color: rgb(117, 1, 16);
+    color: white;
+    display: grid;
+    margin: 5px 15px;
+    grid-template-columns: 1fr 3fr;
+}
+
+.grid_data label,
+.grid_data input,
+.grid_data select {
+    margin: 5px;
+    padding: 5px;
+    line-height: 15px;
+}
+
+.grid_data button {
+    background-color: rgb(16, 83, 164);
+    border-radius: 10px;
+    color: white;
+    margin: 5px 25%;
+    padding: 15px;
+}
+
+.grid_data button:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 700px) {
+    .grid_data {
+        grid-template-columns: 1fr;
+    }
+}

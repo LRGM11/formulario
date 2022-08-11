@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+        <div class="grid_container">
+
+                <footer class="grid_description">
+                        <h1>REGISTRA TUS DATOS</h1>
+                </footer>
+
+
+                <main class="grid_main">
+                        <form action="">
+
+                                <fieldset style="margin: 2.5px;">
+                                        
+                                        <legend style="font-weight: bold;text-align:center;">DATOS PERSONALES</legend>  
+                                              
+                                        <div class="grid_data">
+                                                <label for="idIdentifacion">Documento de Identificación</label>
+                                                <input type="number" name="txtIdentificacion" id="idIdentifacion"
+                                                        required placeholder="ingrese solo números">
+
+                                        </div>
+
+                                        <div class="grid_data">
+                                                <label for="idNombre">Nombre</label>
+                                                <input type="text" id="idNombre" 
+                                                        name="txtNombre" required
+                                                        placeholder="ingrese el nombre completo">
+                                        </div>
+
+                                        <div class="grid_data">
+                                                <label for="idDireccion">Dirección</label>
+                                                <input type="text" name="txtDireccion" 
+                                                        required id="idDireccion"
+                                                        placeholder="solamente dirección del domicilio">
+                                        </div>
+
+                                        <div class="grid_data">
+                                                <label for="idPais">País</label>
+                                                <select name="cmbPais" id="idPais" required>
+                                                        <option value="Guatemala"selected>Guatemala</option>
+                                                        <option value="Honduras" >Salvador</option>
+                                                        <option value="Honduras" >Honduras</option>
+                                                        <option value="Nicaragua">Nicaragua</option>
+                                                        <option value="Honduras" >Panama</option>
+                                                </select>
+                                        </div>
+
+                                        <div class="grid_data">
+                                                <label for="idEmail">E-Mail</label>
+                                                <input type="email" name="txtEmail" id="idEmail">
+                                        </div>
+
+                                        <div class="grid_data">
+                                                <label for="idObservaciones">Observaciones</label>
+                                                <textarea name="txtObservaciones" id="idObservaciones" cols="5"
+                                                        rows="10"></textarea> 
+                                                        
+                                        </div>
+
+                                        <legend style="font-weight: bold;text-align:center;">DATOS LABORALES</legend>
+                                        
+                                        <div class="grid_data">
+                                                <label for="idEmpresa">Empresa</label>
+                                                <input type="text" id="idEmpresa" 
+                                                        name="txtEmpresa" required
+                                                        placeholder="ingrese el nombre completo">
+                                        </div>
+
+                                        <div class="grid_data">
+                                                <label for="idSuledo">Sueldo Ordinario</label>
+                                                <input type="number" name="txtSueldo" id="idSuledo"
+                                                        required placeholder="ingrese solo números">
+
+                                        </div>
+
+                                        <div class="grid_data">
+                                                <label for="idBonificacion">Bonificación</label>
+                                                <input type="number" name="txtBonificacion" id="idBonificacion"
+                                                        required placeholder="ingrese solo números">
+
+                                        </div>
+
+
+                                        <div class="grid_data">
+                                                <label for="idOtBonificacion">Otras Bonificaciones</label>
+                                                <textarea name="txtOtBonificacion" id="idOtBonificacion" cols="5"
+                                                        rows="10"></textarea>
+                                        </div>
+
+                                        <div class="grid_data">
+                                                <button type="submit" style="grid-column: 2;">Enviar Datos</button>
+                                        </div>
+
+                                </fieldset>
+
+                        </form>
+                </main>
+
+                <footer class="grid_footer">
+                        <p>©2022 LRGM</p>
+                        <p>Web Developert</p>
+                </footer>
+
+        </div>
+
+</body>
+
+</html>
+
